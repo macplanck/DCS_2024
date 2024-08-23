@@ -1,4 +1,5 @@
 `define CYCLE_TIME 4.0
+`define PATNUM    1000
 
 module PATTERN(
 	clk,
@@ -27,7 +28,6 @@ always	#(CYCLE/2.0) clk = ~clk;
 //================================================================
 // parameters & integer
 //================================================================
-integer PATNUM;
 integer patcount;
 integer input_gap;
 integer i;
@@ -43,7 +43,6 @@ logic [3:0] golden_ans;
 //================================================================
 initial begin
 
-    PATNUM = 1000;
 	rst_n = 1'b1;
     in_valid = 1'b0;
 	s_in = 'bx;
@@ -52,7 +51,7 @@ initial begin
 
 	reset_task;
 	
-	for(patcount = 0; patcount < PATNUM; patcount = patcount + 1)begin	
+	for(patcount = 0; patcount < `PATNUM; patcount = patcount + 1)begin	
 
 		latency = 0;
 		delay_task;	

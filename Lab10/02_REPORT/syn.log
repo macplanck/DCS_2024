@@ -1,0 +1,5 @@
+./../01_RTL/CDC.sv:139: sorry: constant selects in always_* processes are not currently supported (all bits will be included).
+./../01_RTL/CDC.sv:139: sorry: constant selects in always_* processes are not currently supported (all bits will be included).
+../00_TESTBED/TESTBED.sv:25: warning: input port rst_n is coerced to inout.
+./../00_TESTBED/PATTERN.sv:64: Error: System task/function $srandom() is not defined by any module.
+../02_REPORT/run.vvp: Program not runnable, 1 errors.

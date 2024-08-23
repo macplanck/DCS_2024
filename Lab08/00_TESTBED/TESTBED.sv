@@ -1,4 +1,3 @@
-
 `timescale 1ns/1ps
 `include "../00_TESTBED/PATTERN.sv"
 `include "../01_RTL/PIPE.sv"
@@ -17,8 +16,6 @@ initial begin
 	$dumpfile("../02_REPORT/WAVEFORM.vcd");
 	$dumpvars(0,TESTBED);
 end
-
-	
 
 
 PIPE I_design

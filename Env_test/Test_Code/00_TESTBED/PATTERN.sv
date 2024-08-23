@@ -1,4 +1,5 @@
 `define CYCLE_TIME 4.0
+`define PATNUM   10000
 
 module PATTERN(
 	// input signals
@@ -28,38 +29,35 @@ always	#(CYCLE/2.0) clk = ~clk;
 //================================================================
 // parameters & integer
 //================================================================
-integer PATNUM;
 integer patcount;
 integer input_gap;
 integer i;
 integer a;
 integer latency;
 integer total_latency;
+
 //================================================================
 // logic
 //================================================================
-logic [3:0] golden_ans;
-logic golden_legal;
 
+logic [3:0] golden_ans;
 
 //================================================================
 // initial
 //================================================================
+
 initial begin
-
-	PATNUM = 10000;
 	
-	in = 'bx;
-	latency = 0;
 	total_latency = 0;
+	latency = 0;
+	in = 'bx;
 
-	force clk = 0;
-	# 1.0
+	force clk = 0; # 1.0
 	release clk;
 
 	repeat(3) @(negedge clk);
 
-	for(patcount = 0; patcount < PATNUM; patcount = patcount + 1)begin	
+	for(patcount = 0; patcount < `PATNUM; patcount = patcount + 1)begin	
 
 		latency = 0;
 		input_task;
@@ -67,13 +65,15 @@ initial begin
 		check_ans;
 		
 		total_latency = total_latency + latency;
-		$display("YOU PASS PATTERN NO.%d", patcount);
+		pass_ans;
 
 	end
 
 	YOU_PASS_task;
 	$finish;
+
 end
+
 
 //================================================================
 // task
@@ -113,6 +113,7 @@ task wait_out_valid ; begin
 
 end endtask
 
+
 task check_ans; begin
 
 	if(out !== golden_ans) begin
@@ -127,11 +128,22 @@ task check_ans; begin
 		$finish;
 	end
 
-	
 end endtask
 
 
-task YOU_PASS_task;begin
+task pass_ans; begin
+	if      ((patcount / 3) % 7 == 0)  $display("\033[0;31mPASS PATTERN NO.%4d, \033[m",patcount) ;
+	else if ((patcount / 3) % 7 == 1)  $display("\033[1;31mPASS PATTERN NO.%4d, \033[m",patcount) ;
+	else if ((patcount / 3) % 7 == 2)  $display("\033[1;33mPASS PATTERN NO.%4d, \033[m",patcount) ;
+	else if ((patcount / 3) % 7 == 3)  $display("\033[0;32mPASS PATTERN NO.%4d, \033[m",patcount) ;
+	else if ((patcount / 3) % 7 == 4)  $display("\033[0;36mPASS PATTERN NO.%4d, \033[m",patcount) ;
+	else if ((patcount / 3) % 7 == 5)  $display("\033[0;34mPASS PATTERN NO.%4d, \033[m",patcount) ;
+	else if ((patcount / 3) % 7 == 6)  $display("\033[0;35mPASS PATTERN NO.%4d, \033[m",patcount) ;
+end endtask
+
+
+
+task YOU_PASS_task; begin
 $display("\033[37m                                                                                                                                          ");        
 $display("\033[37m                                                                                \033[32m      :BBQvi.                                              ");        
 $display("\033[37m                                                              .i7ssrvs7         \033[32m     BBBBBBBBQi                                           ");        

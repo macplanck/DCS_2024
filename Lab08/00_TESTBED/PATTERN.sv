@@ -73,8 +73,8 @@ initial begin
 	for(patcount = 0; patcount < PATNUM; patcount = patcount + 1) begin
 		input_task;
 		check_ans;
-		total_latency = total_latency + 1;
-		$display("PASS PATTERN NO.%3d", patcount);
+		total_latency += 1;
+		pass_ans;
 	end
 
     in_valid = 1'b0;
@@ -86,8 +86,9 @@ initial begin
 	while(out_valid === 1'b1) begin
 		@(negedge clk);
 		check_ans;
-		total_latency = total_latency + 1;
-		$display("PASS PATTERN NO.%3d", patcount);
+		total_latency += 1;
+		patcount += 1;
+		pass_ans;
 	end
 
 	YOU_PASS_task;
@@ -140,6 +141,16 @@ task input_task; begin
 	
 end endtask
 
+
+task pass_ans; begin
+	if      ((patcount / 3) % 7 == 0)  $display("\033[0;31mPASS PATTERN NO.%4d, \033[m",patcount) ;
+	else if ((patcount / 3) % 7 == 1)  $display("\033[1;31mPASS PATTERN NO.%4d, \033[m",patcount) ;
+	else if ((patcount / 3) % 7 == 2)  $display("\033[1;33mPASS PATTERN NO.%4d, \033[m",patcount) ;
+	else if ((patcount / 3) % 7 == 3)  $display("\033[0;32mPASS PATTERN NO.%4d, \033[m",patcount) ;
+	else if ((patcount / 3) % 7 == 4)  $display("\033[0;36mPASS PATTERN NO.%4d, \033[m",patcount) ;
+	else if ((patcount / 3) % 7 == 5)  $display("\033[0;34mPASS PATTERN NO.%4d, \033[m",patcount) ;
+	else if ((patcount / 3) % 7 == 6)  $display("\033[0;35mPASS PATTERN NO.%4d, \033[m",patcount) ;
+end endtask
 
 
 task check_ans; begin

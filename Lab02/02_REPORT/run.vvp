@@ -1,0 +1,499 @@
+#! /opt/homebrew/Cellar/icarus-verilog/12.0/bin/vvp
+:ivl_version "12.0 (stable)";
+:ivl_delay_selection "TYPICAL";
+:vpi_time_precision - 12;
+:vpi_module "/opt/homebrew/Cellar/icarus-verilog/12.0/lib/ivl/system.vpi";
+:vpi_module "/opt/homebrew/Cellar/icarus-verilog/12.0/lib/ivl/vhdl_sys.vpi";
+:vpi_module "/opt/homebrew/Cellar/icarus-verilog/12.0/lib/ivl/vhdl_textio.vpi";
+:vpi_module "/opt/homebrew/Cellar/icarus-verilog/12.0/lib/ivl/v2005_math.vpi";
+:vpi_module "/opt/homebrew/Cellar/icarus-verilog/12.0/lib/ivl/va_math.vpi";
+:vpi_module "/opt/homebrew/Cellar/icarus-verilog/12.0/lib/ivl/v2009.vpi";
+S_0x148e23c60 .scope package, "$unit" "$unit" 2 1;
+ .timescale 0 0;
+S_0x148e23dd0 .scope module, "TESTBED" "TESTBED" 3 5;
+ .timescale -9 -12;
+v0x148e52be0_0 .net "in_num0", 5 0, v0x148e50010_0;  1 drivers
+v0x148e52cd0_0 .net "in_num1", 5 0, v0x148e500d0_0;  1 drivers
+v0x148e52da0_0 .net "in_num2", 5 0, v0x148e50180_0;  1 drivers
+v0x148e52e70_0 .net "in_num3", 5 0, v0x148e50270_0;  1 drivers
+v0x148e52f40_0 .net "in_num4", 5 0, v0x148e50320_0;  1 drivers
+v0x148e53010_0 .net "out_num", 5 0, L_0x148e55900;  1 drivers
+S_0x148e1dec0 .scope module, "I_PATTERN" "PATTERN" 3 27, 4 4 0, S_0x148e23dd0;
+ .timescale -9 -12;
+    .port_info 0 /OUTPUT 6 "in_num0";
+    .port_info 1 /OUTPUT 6 "in_num1";
+    .port_info 2 /OUTPUT 6 "in_num2";
+    .port_info 3 /OUTPUT 6 "in_num3";
+    .port_info 4 /OUTPUT 6 "in_num4";
+    .port_info 5 /INPUT 6 "out_num";
+v0x148e32500 .array "array", 0 4, 5 0;
+v0x148e32590_0 .var/i "i", 31 0;
+v0x148e50010_0 .var "in_num0", 5 0;
+v0x148e500d0_0 .var "in_num1", 5 0;
+v0x148e50180_0 .var "in_num2", 5 0;
+v0x148e50270_0 .var "in_num3", 5 0;
+v0x148e50320_0 .var "in_num4", 5 0;
+v0x148e503d0_0 .var/i "j", 31 0;
+v0x148e50480_0 .var "out_ans", 5 0;
+v0x148e50590_0 .net "out_num", 5 0, L_0x148e55900;  alias, 1 drivers
+v0x148e50640_0 .var/i "patcount", 31 0;
+S_0x148e1e030 .scope task, "YOU_PASS_task" "YOU_PASS_task" 4 90, 4 90 0, S_0x148e1dec0;
+ .timescale -9 -12;
+TD_TESTBED.I_PATTERN.YOU_PASS_task ;
+    %vpi_call/w 4 91 "$display", "\033[37m                                                                                                                                          " {0 0 0};
+    %vpi_call/w 4 92 "$display", "\033[37m                                                                                \033[32m      :BBQvi.                                              " {0 0 0};
+    %vpi_call/w 4 93 "$display", "\033[37m                                                              .i7ssrvs7         \033[32m     BBBBBBBBQi                                           " {0 0 0};
+    %vpi_call/w 4 94 "$display", "\033[37m                        .:r7rrrr:::.        .::::::...   .i7vr:.      .B:       \033[32m    :BBBP :7BBBB.                                         " {0 0 0};
+    %vpi_call/w 4 95 "$display", "\033[37m                      .Kv.........:rrvYr7v7rr:.....:rrirJr.   .rgBBBBg  Bi      \033[32m    BBBB     BBBB                                         " {0 0 0};
+    %vpi_call/w 4 96 "$display", "\033[37m                     7Q  :rubEPUri:.       ..:irrii:..    :bBBBBBBBBBBB  B      \033[32m   iBBBv     BBBB       vBr                               " {0 0 0};
+    %vpi_call/w 4 97 "$display", "\033[37m                    7B  BBBBBBBBBBBBBBB::BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB :R     \033[32m   BBBBBKrirBBBB.     :BBBBBB:                            " {0 0 0};
+    %vpi_call/w 4 98 "$display", "\033[37m                   Jd .BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB: Bi    \033[32m  rBBBBBBBBBBBR.    .BBBM:BBB                             " {0 0 0};
+    %vpi_call/w 4 99 "$display", "\033[37m                  uZ .BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB .B    \033[32m  BBBB   .::.      EBBBi :BBU                             " {0 0 0};
+    %vpi_call/w 4 100 "$display", "\033[37m                 7B .BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB  B    \033[32m MBBBr           vBBBu   BBB.                             " {0 0 0};
+    %vpi_call/w 4 101 "$display", "\033[37m                .B  BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB: JJ   \033[32m i7PB          iBBBBB.  iBBB                              " {0 0 0};
+    %vpi_call/w 4 102 "$display", "\033[37m                B. BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB  Lu             \033[32m  vBBBBPBBBBPBBB7       .7QBB5i                " {0 0 0};
+    %vpi_call/w 4 103 "$display", "\033[37m               Y1 KBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBi XBBBBBBBi :B            \033[32m :RBBB.  .rBBBBB.      rBBBBBBBB7              " {0 0 0};
+    %vpi_call/w 4 104 "$display", "\033[37m              :B .BBBBBBBBBBBBBsRBBBBBBBBBBBrQBBBBB. UBBBRrBBBBBBr 1BBBBBBBBB  B.          \033[32m    .       BBBB       BBBB  :BBBB             " {0 0 0};
+    %vpi_call/w 4 105 "$display", "\033[37m              Bi BBBBBBBBBBBBBi :BBBBBBBBBBE .BBK.  .  .   QBBBBBBBBBBBBBBBBBB  Bi         \033[32m           rBBBr       BBBB    BBBU            " {0 0 0};
+    %vpi_call/w 4 106 "$display", "\033[37m             .B .BBBBBBBBBBBBBBQBBBBBBBBBBBB       \033[38;2;242;172;172mBBv \033[37m.LBBBBBBBBBBBBBBBBBBBBBB. B7.:ii:   \033[32m           vBBB        .BBBB   :7i.            " {0 0 0};
+    %vpi_call/w 4 107 "$display", "\033[37m            .B  PBBBBBBBBBBBBBBBBBBBBBBBBBBBBbYQB. \033[38;2;242;172;172mBB: \033[37mBBBBBBBBBBBBBBBBBBBBBBBBB  Jr:::rK7 \033[32m             .7  BBB7   iBBBg                  " {0 0 0};
+    %vpi_call/w 4 108 "$display", "\033[37m           7M  PBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB  \033[38;2;242;172;172mBB. \033[37mBBBBBBBBBBBBBBBBBBBBBBB..i   .   v1                  \033[32mdBBB.   5BBBr                 " {0 0 0};
+    %vpi_call/w 4 109 "$display", "\033[37m          sZ .BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB  \033[38;2;242;172;172mBB. \033[37mBBBBBBBBBBBBBBBBBBBBBBBBBBB iD2BBQL.                 \033[32m ZBBBr  EBBBv     YBBBBQi     " {0 0 0};
+    %vpi_call/w 4 110 "$display", "\033[37m  .7YYUSIX5 .BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB  \033[38;2;242;172;172mBB. \033[37mBBBBBBBBBBBBBBBBBBBBBBBBY.:.      :B                 \033[32m  iBBBBBBBBD     BBBBBBBBB.   " {0 0 0};
+    %vpi_call/w 4 111 "$display", "\033[37m LB.        ..BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB. \033[38;2;242;172;172mBB: \033[37mBBBBBBBBBBBBBBBBBBBBBBBBMBBB. BP17si                 \033[32m    :LBBBr      vBBBi  5BBB   " {0 0 0};
+    %vpi_call/w 4 112 "$display", "\033[37m  KvJPBBB :BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB: \033[38;2;242;172;172mZB: \033[37mBBBBBBBBBBBBBBBBBBBBBBBBBsiJr .i7ssr:                \033[32m          ...   :BBB:   BBBu  " {0 0 0};
+    %vpi_call/w 4 113 "$display", "\033[37m i7ii:.   ::BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBj \033[38;2;242;172;172muBi \033[37mQBBBBBBBBBBBBBBBBBBBBBBBBi.ir      iB                \033[32m         .BBBi   BBBB   iMBu  " {0 0 0};
+    %vpi_call/w 4 114 "$display", "\033[37mDB    .  vBdBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBg \033[38;2;242;172;172m7Bi \033[37mBBBBBBBBBBBBBBBBBBBBBBBBBBBBB rBrXPv.                \033[32m          BBBX   :BBBr        " {0 0 0};
+    %vpi_call/w 4 115 "$display", "\033[37m :vQBBB. BQBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBQ \033[38;2;242;172;172miB: \033[37mBBBBBBBBBBBBBBBBBBBBBBBBBBBBB .L:ii::irrrrrrrr7jIr   \033[32m          .BBBv  :BBBQ        " {0 0 0};
+    %vpi_call/w 4 116 "$display", "\033[37m :7:.   .. 5BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB  \033[38;2;242;172;172mBr \033[37mBBBBBBBBBBBBBBBBBBBBBBBBBBBB:            ..... ..YB. \033[32m           .BBBBBBBBB:        " {0 0 0};
+    %vpi_call/w 4 117 "$display", "\033[37mBU  .:. BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB  \033[38;2;242;172;172mB7 \033[37mgBBBBBBBBBBBBBBBBBBBBBBBBBB. gBBBBBBBBBBBBBBBBBB. BL \033[32m             rBBBBB1.         " {0 0 0};
+    %vpi_call/w 4 118 "$display", "\033[37m rY7iB: BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB: \033[38;2;242;172;172mB7 \033[37mBBBBBBBBBBBBBBBBBBBBBBBBBB. QBBBBBBBBBBBBBBBBBi  v5                                " {0 0 0};
+    %vpi_call/w 4 119 "$display", "\033[37m     us EBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB \033[38;2;242;172;172mIr \033[37mBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBgu7i.:BBBBBBBr Bu                                 " {0 0 0};
+    %vpi_call/w 4 120 "$display", "\033[37m      B  7BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB.\033[38;2;242;172;172m:i \033[37mBBBBBBBBBBBBBBBBBBBBBBBBBBBv:.  .. :::  .rr    rB                                  " {0 0 0};
+    %vpi_call/w 4 121 "$display", "\033[37m      us  .BBBBBBBBBBBBBQLXBBBBBBBBBBBBBBBBBBBBBBBBq  .BBBBBBBBBBBBBBBBBBBBBBBBBv  :iJ7vri:::1Jr..isJYr                                   " {0 0 0};
+    %vpi_call/w 4 122 "$display", "\033[37m      B  BBBBBBB  MBBBM      qBBBBBBBBBBBBBBBBBBBBBB: BBBBBBBBBBBBBBBBBBBBBBBBBB  B:           iir:                                       " {0 0 0};
+    %vpi_call/w 4 123 "$display", "\033[37m     iB iBBBBBBBL       BBBP. :BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB  B.                                                       " {0 0 0};
+    %vpi_call/w 4 124 "$display", "\033[37m     P: BBBBBBBBBBB5v7gBBBBBB  BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB: Br                                                        " {0 0 0};
+    %vpi_call/w 4 125 "$display", "\033[37m     B  BBBs 7BBBBBBBBBBBBBB7 :BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB .B                                                         " {0 0 0};
+    %vpi_call/w 4 126 "$display", "\033[37m    .B :BBBB.  EBBBBBQBBBBBJ .BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB. B.                                                         " {0 0 0};
+    %vpi_call/w 4 127 "$display", "\033[37m    ij qBBBBBg          ..  .BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB .B                                                          " {0 0 0};
+    %vpi_call/w 4 128 "$display", "\033[37m    UY QBBBBBBBBSUSPDQL...iBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBK EL                                                          " {0 0 0};
+    %vpi_call/w 4 129 "$display", "\033[37m    B7 BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB: B:                                                          " {0 0 0};
+    %vpi_call/w 4 130 "$display", "\033[37m    B  BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBYrBB vBBBBBBBBBBBBBBBBBBBBBBBB. Ls                                                          " {0 0 0};
+    %vpi_call/w 4 131 "$display", "\033[37m    B  BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBi_  /UBBBBBBBBBBBBBBBBBBBBBBBBB. :B:                                                        " {0 0 0};
+    %vpi_call/w 4 132 "$display", "\033[37m   rM .BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB  ..IBBBBBBBBBBBBBBBBQBBBBBBBBBB  B                                                        " {0 0 0};
+    %vpi_call/w 4 133 "$display", "\033[37m   B  BBBBBBBBBdZBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBPBBBBBBBBBBBBEji:..     sBBBBBBBr Br                                                       " {0 0 0};
+    %vpi_call/w 4 134 "$display", "\033[37m  7B 7BBBBBBBr     .:vXQBBBBBBBBBBBBBBBBBBBBBBBBBQqui::..  ...i:i7777vi  BBBBBBr Bi                                                       " {0 0 0};
+    %vpi_call/w 4 135 "$display", "\033[37m  Ki BBBBBBB  rY7vr:i....  .............:.....  ...:rii7vrr7r:..      7B  BBBBB  Bi                                                       " {0 0 0};
+    %vpi_call/w 4 136 "$display", "\033[37m  B. BBBBBB  B:    .::ir77rrYLvvriiiiiiirvvY7rr77ri:..                 bU  iQBB:..rI                                                      " {0 0 0};
+    %vpi_call/w 4 137 "$display", "\033[37m.S: 7BBBBP  B.                                                          vI7.  .:.  B.                                                     " {0 0 0};
+    %vpi_call/w 4 138 "$display", "\033[37mB: ir:.   :B.                                                             :rvsUjUgU.                                                      " {0 0 0};
+    %vpi_call/w 4 139 "$display", "\033[37mrMvrrirJKur                                                                                                                               \033[m" {0 0 0};
+    %vpi_call/w 4 140 "$display", "----------------------------------------------------------------------------------------------------------------------" {0 0 0};
+    %vpi_call/w 4 141 "$display", "                                                  Congratulations!                \011\011\011\011\011\011             " {0 0 0};
+    %vpi_call/w 4 142 "$display", "                                           You have passed all patterns!          \011\011\011\011\011\011             " {0 0 0};
+    %vpi_call/w 4 143 "$display", "----------------------------------------------------------------------------------------------------------------------" {0 0 0};
+    %vpi_call/w 4 145 "$finish" {0 0 0};
+    %end;
+S_0x148e07df0 .scope task, "check_ans" "check_ans" 4 61, 4 61 0, S_0x148e1dec0;
+ .timescale -9 -12;
+TD_TESTBED.I_PATTERN.check_ans ;
+    %load/vec4 v0x148e50480_0;
+    %load/vec4 v0x148e50590_0;
+    %cmp/ne;
+    %jmp/0xz  T_1.0, 6;
+    %fork TD_TESTBED.I_PATTERN.fail, S_0x148e07f60;
+    %join;
+    %vpi_call/w 4 65 "$display", "-------------------------------------------------------------------------------------------------------------------------------------" {0 0 0};
+    %vpi_call/w 4 66 "$display", "                                                FAIL! Pattern No. %3d                                                                ", v0x148e50640_0 {0 0 0};
+    %vpi_call/w 4 67 "$display", "                                                                                                                                     " {0 0 0};
+    %vpi_call/w 4 68 "$display", "                       Input :   (num0)  %2d    (num1)  %2d    (num2)  %2d    (num3)  %2d    (num4)  %2d                             ", v0x148e50010_0, v0x148e500d0_0, v0x148e50180_0, v0x148e50270_0, v0x148e50320_0 {0 0 0};
+    %vpi_call/w 4 69 "$display", "                       Sorted:   (num0)  %2d    (num1)  %2d    (num2)  %2d    (num3)  %2d    (num4)  %2d                             ", &A<v0x148e32500, 0>, &A<v0x148e32500, 1>, &A<v0x148e32500, 2>, &A<v0x148e32500, 3>, &A<v0x148e32500, 4> {0 0 0};
+    %vpi_call/w 4 70 "$display", "                                                                                                                                     " {0 0 0};
+    %vpi_call/w 4 71 "$display", "                                      Your output:    %2d      PATTER Answer:    %2d                                                 ", v0x148e50590_0, v0x148e50480_0 {0 0 0};
+    %vpi_call/w 4 72 "$display", "-------------------------------------------------------------------------------------------------------------------------------------" {0 0 0};
+    %vpi_call/w 4 73 "$finish" {0 0 0};
+T_1.0 ;
+    %end;
+S_0x148e07f60 .scope task, "fail" "fail" 4 149, 4 149 0, S_0x148e1dec0;
+ .timescale -9 -12;
+TD_TESTBED.I_PATTERN.fail ;
+    %vpi_call/w 4 150 "$display", "\033[38;2;252;238;238m                                                                                                                                           " {0 0 0};
+    %vpi_call/w 4 151 "$display", "\033[38;2;252;238;238m                                                                                                :L777777v7.                                " {0 0 0};
+    %vpi_call/w 4 152 "$display", "\033[31m  i:..::::::i.      :::::         ::::    .:::.       \033[38;2;252;238;238m                                       .vYr::::::::i7Lvi                             " {0 0 0};
+    %vpi_call/w 4 153 "$display", "\033[31m  BBBBBBBBBBBi     iBBBBBL       .BBBB    7BBB7       \033[38;2;252;238;238m                                      JL..\033[38;2;252;172;172m:r777v777i::\033[38;2;252;238;238m.ijL                           " {0 0 0};
+    %vpi_call/w 4 154 "$display", "\033[31m  BBBB.::::ir.     BBB:BBB.      .BBBv    iBBB:       \033[38;2;252;238;238m                                    :K: \033[38;2;252;172;172miv777rrrrr777v7:.\033[38;2;252;238;238m:J7                         " {0 0 0};
+    %vpi_call/w 4 155 "$display", "\033[31m  BBBQ            :BBY iBB7       BBB7    :BBB:       \033[38;2;252;238;238m                                   :d \033[38;2;252;172;172m.L7rrrrrrrrrrrrr77v: \033[38;2;252;238;238miI.                       " {0 0 0};
+    %vpi_call/w 4 156 "$display", "\033[31m  BBBB            BBB. .BBB.      BBB7    :BBB:       \033[38;2;252;238;238m                                  .B \033[38;2;252;172;172m.L7rrrrrrrrrrrrrrrrr7v..\033[38;2;252;238;238mBr                      " {0 0 0};
+    %vpi_call/w 4 157 "$display", "\033[31m  BBBB:r7vvj:    :BBB   gBBs      BBB7    :BBB:       \033[38;2;252;238;238m                                  S:\033[38;2;252;172;172m v7rrrrrrrrrrrrrrrrrrr7v. \033[38;2;252;238;238mB:                     " {0 0 0};
+    %vpi_call/w 4 158 "$display", "\033[31m  BBBBBBBBBB7    BBB:   .BBB.     BBB7    :BBB:       \033[38;2;252;238;238m                                 .D \033[38;2;252;172;172mi7rrrrrrr777rrrrrrrrrrr7v. \033[38;2;252;238;238mB.                    " {0 0 0};
+    %vpi_call/w 4 159 "$display", "\033[31m  BBBB    ..    iBBBBBBBBBBBP     BBB7    :BBB:       \033[38;2;252;238;238m                                 rv\033[38;2;252;172;172m v7rrrrrr7rirv7rrrrrrrrrr7v \033[38;2;252;238;238m:I                    " {0 0 0};
+    %vpi_call/w 4 160 "$display", "\033[31m  BBBB          BBBBi7vviQBBB.    BBB7    :BBB.       \033[38;2;252;238;238m                                 2i\033[38;2;252;172;172m.v7rrrrrr7i  :v7rrrrrrrrrrvi \033[38;2;252;238;238mB:                   " {0 0 0};
+    %vpi_call/w 4 161 "$display", "\033[31m  BBBB         rBBB.      BBBQ   .BBBv    iBBB2ir777L7\033[38;2;252;238;238m                                 2i.\033[38;2;252;172;172mv7rrrrrr7v \033[38;2;252;238;238m:..\033[38;2;252;172;172mv7rrrrrrrrr77 \033[38;2;252;238;238mrX                   " {0 0 0};
+    %vpi_call/w 4 162 "$display", "\033[31m .BBBB        :BBBB       BBBB7  .BBBB    7BBBBBBBBBBB\033[38;2;252;238;238m                                 Yv \033[38;2;252;172;172mv7rrrrrrrv.\033[38;2;252;238;238m.B \033[38;2;252;172;172m.vrrrrrrrrrrL.\033[38;2;252;238;238m:5                   " {0 0 0};
+    %vpi_call/w 4 163 "$display", "\033[31m  . ..        ....         ...:   ....    ..   .......\033[38;2;252;238;238m                                 .q \033[38;2;252;172;172mr7rrrrrrr7i \033[38;2;252;238;238mPv \033[38;2;252;172;172mi7rrrrrrrrrv.\033[38;2;252;238;238m:S                   " {0 0 0};
+    %vpi_call/w 4 164 "$display", "\033[38;2;252;238;238m                                                                                        Lr \033[38;2;252;172;172m77rrrrrr77 \033[38;2;252;238;238m:B. \033[38;2;252;172;172mv7rrrrrrrrv.\033[38;2;252;238;238m:S                   " {0 0 0};
+    %vpi_call/w 4 165 "$display", "\033[38;2;252;238;238m                                                                                         B: \033[38;2;252;172;172m7v7rrrrrv. \033[38;2;252;238;238mBY \033[38;2;252;172;172mi7rrrrrrr7v \033[38;2;252;238;238miK                   " {0 0 0};
+    %vpi_call/w 4 166 "$display", "\033[38;2;252;238;238m                                                                              .::rriii7rir7. \033[38;2;252;172;172m.r77777vi \033[38;2;252;238;238m7B  \033[38;2;252;172;172mvrrrrrrr7r \033[38;2;252;238;238m2r                   " {0 0 0};
+    %vpi_call/w 4 167 "$display", "\033[38;2;252;238;238m                                                                       .:rr7rri::......    .     \033[38;2;252;172;172m.:i7s \033[38;2;252;238;238m.B. \033[38;2;252;172;172mv7rrrrr7L..\033[38;2;252;238;238mB                    " {0 0 0};
+    %vpi_call/w 4 168 "$display", "\033[38;2;252;238;238m                                                        .::7L7rriiiirr77rrrrrrrr72BBBBBBBBBBBBvi:..  \033[38;2;252;172;172m.  \033[38;2;252;238;238mBr \033[38;2;252;172;172m77rrrrrvi \033[38;2;252;238;238mKi                    " {0 0 0};
+    %vpi_call/w 4 169 "$display", "\033[38;2;252;238;238m                                                    :rv7i::...........    .:i7BBBBQbPPPqPPPdEZQBBBBBr:.\033[38;2;252;238;238m ii \033[38;2;252;172;172mvvrrrrvr \033[38;2;252;238;238mvs                     " {0 0 0};
+    %vpi_call/w 4 170 "$display", "\033[38;2;252;238;238m                    .S77L.                      .rvi:. ..:r7QBBBBBBBBBBBgri.    .:BBBPqqKKqqqqPPPPPEQBBBZi  \033[38;2;252;172;172m:777vi \033[38;2;252;238;238mvI                      " {0 0 0};
+    %vpi_call/w 4 171 "$display", "\033[38;2;252;238;238m                    B: ..Jv                   isi. .:rBBBBBQZPPPPqqqPPdERBBBBBi.    :BBRKqqqqqqqqqqqqPKDDBB:  \033[38;2;252;172;172m:7. \033[38;2;252;238;238mJr                       " {0 0 0};
+    %vpi_call/w 4 172 "$display", "\033[38;2;252;238;238m                   vv SB: iu                rL: .iBBBQEPqqPPqqqqqqqqqqqqqPPPPbQBBB:   .EBQKqqqqqqPPPqqKqPPgBB:  .B:                        " {0 0 0};
+    %vpi_call/w 4 173 "$display", "\033[38;2;252;238;238m                  :R  BgBL..s7            rU: .qBBEKPqqqqqqqqqqqqqqqqqqqqqqqqqPPPEBBB:   EBEPPPEgQBBQEPqqqqKEBB: .s                        " {0 0 0};
+    %vpi_call/w 4 174 "$display", "\033[38;2;252;238;238m               .U7.  iBZBBBi :ji         5r .MBQqPqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqPKgBB:  .BBBBBdJrrSBBQKqqqqKZB7  I:                      " {0 0 0};
+    %vpi_call/w 4 175 "$display", "\033[38;2;252;238;238m              v2. :rBBBB: .BB:.ru7:    :5. rBQqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqPPBB:  :.        .5BKqqqqqqBB. Kr                     " {0 0 0};
+    %vpi_call/w 4 176 "$display", "\033[38;2;252;238;238m             .B .BBQBB.   .RBBr  :L77ri2  BBqPqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqPbBB   \033[38;2;252;172;172m.irrrrri  \033[38;2;252;238;238mQQqqqqqqKRB. 2i                    " {0 0 0};
+    %vpi_call/w 4 177 "$display", "\033[38;2;252;238;238m              27 :BBU  rBBBdB \033[38;2;252;172;172m iri::::: \033[38;2;252;238;238m.BQKqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqKRBs\033[38;2;252;172;172mirrr7777L: \033[38;2;252;238;238m7BqqqqqqqXZB. BLv772i              " {0 0 0};
+    %vpi_call/w 4 178 "$display", "\033[38;2;252;238;238m               rY  PK  .:dPMB \033[38;2;252;172;172m.Y77777r.\033[38;2;252;238;238m:BEqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqPPBqi\033[38;2;252;172;172mirrrrrv: \033[38;2;252;238;238muBqqqqqqqqqgB  :.:. B:             " {0 0 0};
+    %vpi_call/w 4 179 "$display", "\033[38;2;252;238;238m                iu 7BBi  rMgB \033[38;2;252;172;172m.vrrrrri\033[38;2;252;238;238mrBEqKqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqPQgi\033[38;2;252;172;172mirrrrv. \033[38;2;252;238;238mQQqqqqqqqqqXBb .BBB .s:.           " {0 0 0};
+    %vpi_call/w 4 180 "$display", "\033[38;2;252;238;238m                i7 BBdBBBPqbB \033[38;2;252;172;172m.vrrrri\033[38;2;252;238;238miDgPPbPqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqPQDi\033[38;2;252;172;172mirr77 \033[38;2;252;238;238m:BdqqqqqqqqqqPB. rBB. .:iu7         " {0 0 0};
+    %vpi_call/w 4 181 "$display", "\033[38;2;252;238;238m                iX.:iBRKPqKXB.\033[38;2;252;172;172m 77rrr\033[38;2;252;238;238mi7QPBBBBPqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqPB7i\033[38;2;252;172;172mrr7r \033[38;2;252;238;238m.vBBPPqqqqqqKqBZ  BPBgri: 1B        " {0 0 0};
+    %vpi_call/w 4 182 "$display", "\033[38;2;252;238;238m                 ivr .BBqqKXBi \033[38;2;252;172;172mr7rri\033[38;2;252;238;238miQgQi   QZKqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqPEQi\033[38;2;252;172;172mirr7r.  \033[38;2;252;238;238miBBqPqqqqqqPB:.QPPRBBB LK        " {0 0 0};
+    %vpi_call/w 4 183 "$display", "\033[38;2;252;238;238m                   :I. iBgqgBZ \033[38;2;252;172;172m:7rr\033[38;2;252;238;238miJQPB.   gRqqqqqqqqPPPPPPPPqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqPQ7\033[38;2;252;172;172mirrr7vr.  \033[38;2;252;238;238mUBqqPPgBBQPBBKqqqKB  B         " {0 0 0};
+    %vpi_call/w 4 184 "$display", "\033[38;2;252;238;238m                     v7 .BBR: \033[38;2;252;172;172m.r7ri\033[38;2;252;238;238miggqPBrrBBBBBBBBBBBBBBBBBBQEPPqqPPPqqqqqqqqqqqqqqqqqqqqqqqqqPgPi\033[38;2;252;172;172mirrrr7v7  \033[38;2;252;238;238mrBPBBP:.LBbPqqqqqB. u.        " {0 0 0};
+    %vpi_call/w 4 185 "$display", "\033[38;2;252;238;238m                      .j. . \033[38;2;252;172;172m :77rr\033[38;2;252;238;238miiBPqPbBB::::::.....:::iirrSBBBBBBBQZPPPPPqqqqqqqqqqqqqqqqqqqqEQi\033[38;2;252;172;172mirrrrrr7v \033[38;2;252;238;238m.BB:     :BPqqqqqDB .B        " {0 0 0};
+    %vpi_call/w 4 186 "$display", "\033[38;2;252;238;238m                       YL \033[38;2;252;172;172m.i77rrrr\033[38;2;252;238;238miLQPqqKQJ. \033[38;2;252;172;172m ............       \033[38;2;252;238;238m..:irBBBBBBZPPPqqqqqqqPPBBEPqqqdRr\033[38;2;252;172;172mirrrrrr7v \033[38;2;252;238;238m.B  .iBB  dQPqqqqPBi Y:       " {0 0 0};
+    %vpi_call/w 4 187 "$display", "\033[38;2;252;238;238m                     :U:.\033[38;2;252;172;172mrv7rrrrri\033[38;2;252;238;238miPgqqqqKZB.\033[38;2;252;172;172m.v77777777777777ri::..   \033[38;2;252;238;238m  ..:rBBBBQPPqqqqPBUvBEqqqPRr\033[38;2;252;172;172mirrrrrrvi\033[38;2;252;238;238m iB:RBBbB7 :BQqPqKqBR r7       " {0 0 0};
+    %vpi_call/w 4 188 "$display", "\033[38;2;252;238;238m                    iI.\033[38;2;252;172;172m.v7rrrrrrri\033[38;2;252;238;238midgqqqqqKB:\033[38;2;252;172;172m 77rrrrrrrrrrrrr77777777ri:..   \033[38;2;252;238;238m .:1BBBEPPB:   BbqqPQr\033[38;2;252;172;172mirrrr7vr\033[38;2;252;238;238m .BBBZPqqDB  .JBbqKPBi vi       " {0 0 0};
+    %vpi_call/w 4 189 "$display", "\033[38;2;252;238;238m                   :B \033[38;2;252;172;172miL7rrrrrrrri\033[38;2;252;238;238mibgqqqqqqBr\033[38;2;252;172;172m r7rrrrrrrrrrrrrrrrrrrrr777777ri:.  \033[38;2;252;238;238m .iBBBBi  .BbqqdRr\033[38;2;252;172;172mirr7v7: \033[38;2;252;238;238m.Bi.dBBPqqgB:  :BPqgB  B        " {0 0 0};
+    %vpi_call/w 4 190 "$display", "\033[38;2;252;238;238m                   .K.i\033[38;2;252;172;172mv7rrrrrrrri\033[38;2;252;238;238miZgqqqqqqEB \033[38;2;252;172;172m.vrrrrrrrrrrrrrrrrrrrrrrrrrrr777vv7i.  \033[38;2;252;238;238m :PBBBBPqqqEQ\033[38;2;252;172;172miir77:  \033[38;2;252;238;238m:BB:  .rBPqqEBB. iBZB. Rr        " {0 0 0};
+    %vpi_call/w 4 191 "$display", "\033[38;2;252;238;238m                    iM.:\033[38;2;252;172;172mv7rrrrrrrri\033[38;2;252;238;238mUQPqqqqqPBi\033[38;2;252;172;172m i7rrrrrrrrrrrrrrrrrrrrrrrrr77777i.   \033[38;2;252;238;238m.  :BddPqqqqEg\033[38;2;252;172;172miir7. \033[38;2;252;238;238mrBBPqBBP. :BXKqgB  BBB. 2r         " {0 0 0};
+    %vpi_call/w 4 192 "$display", "\033[38;2;252;238;238m                     :U:.\033[38;2;252;172;172miv77rrrrri\033[38;2;252;238;238mrBPqqqqqqPB: \033[38;2;252;172;172m:7777rrrrrrrrrrrrrrr777777ri.   \033[38;2;252;238;238m.:uBBBBZPqqqqqqPQL\033[38;2;252;172;172mirr77 \033[38;2;252;238;238m.BZqqPB:  qMqqPB. Yv:  Ur          " {0 0 0};
+    %vpi_call/w 4 193 "$display", "\033[38;2;252;238;238m                       1L:.\033[38;2;252;172;172m:77v77rii\033[38;2;252;238;238mqQPqqqqqPbBi \033[38;2;252;172;172m .ir777777777777777ri:..   \033[38;2;252;238;238m.:rBBBRPPPPPqqqqqqqgQ\033[38;2;252;172;172miirr7vr \033[38;2;252;238;238m:BqXQ: .BQPZBBq ...:vv.           " {0 0 0};
+    %vpi_call/w 4 194 "$display", "\033[38;2;252;238;238m                         LJi..\033[38;2;252;172;172m::r7rii\033[38;2;252;238;238mRgKPPPPqPqBB:.  \033[38;2;252;172;172m ............     \033[38;2;252;238;238m..:rBBBBPPqqKKKKqqqPPqPbB1\033[38;2;252;172;172mrvvvvvr  \033[38;2;252;238;238mBEEDQBBBBBRri. 7JLi              " {0 0 0};
+    %vpi_call/w 4 195 "$display", "\033[38;2;252;238;238m                           .jL\033[38;2;252;172;172m  777rrr\033[38;2;252;238;238mBBBBBBgEPPEBBBvri:::::::::irrrbBBBBBBDPPPPqqqqqqXPPZQBBBBr\033[38;2;252;172;172m.......\033[38;2;252;238;238m.:BBBBg1ri:....:rIr                 " {0 0 0};
+    %vpi_call/w 4 196 "$display", "\033[38;2;252;238;238m                            vI \033[38;2;252;172;172m:irrr:....\033[38;2;252;238;238m:rrEBBBBBBBBBBBBBBBBBBBBBBBBBBBBBQQBBBBBBBBBBBBBQr\033[38;2;252;172;172mi:...:.   \033[38;2;252;238;238m.:ii:.. .:.:irri::                    " {0 0 0};
+    %vpi_call/w 4 197 "$display", "\033[38;2;252;238;238m                             71vi\033[38;2;252;172;172m:::irrr::....\033[38;2;252;238;238m    ...:..::::irrr7777777777777rrii::....  ..::irvrr7sUJYv7777v7ii..                         " {0 0 0};
+    %vpi_call/w 4 198 "$display", "\033[38;2;252;238;238m                               .i777i. ..:rrri77rriiiiiii:::::::...............:::iiirr7vrrr:.                                             " {0 0 0};
+    %vpi_call/w 4 199 "$display", "\033[38;2;252;238;238m                                                      .::::::::::::::::::::::::::::::                                                      \033[m" {0 0 0};
+    %end;
+S_0x148e40d80 .scope task, "input_task" "input_task" 4 40, 4 40 0, S_0x148e1dec0;
+ .timescale -9 -12;
+TD_TESTBED.I_PATTERN.input_task ;
+    %vpi_func 4 41 "$urandom_range" 32, 32'sb00000000000000000000000000000000, 32'sb00000000000000000000000001000000 {0 0 0};
+    %pad/u 6;
+    %store/vec4 v0x148e50010_0, 0, 6;
+    %load/vec4 v0x148e50010_0;
+    %ix/load 4, 0, 0;
+    %flag_set/imm 4, 0;
+    %store/vec4a v0x148e32500, 4, 0;
+    %vpi_func 4 42 "$urandom_range" 32, 32'sb00000000000000000000000000000000, 32'sb00000000000000000000000001000000 {0 0 0};
+    %pad/u 6;
+    %store/vec4 v0x148e500d0_0, 0, 6;
+    %load/vec4 v0x148e500d0_0;
+    %ix/load 4, 1, 0;
+    %flag_set/imm 4, 0;
+    %store/vec4a v0x148e32500, 4, 0;
+    %vpi_func 4 43 "$urandom_range" 32, 32'sb00000000000000000000000000000000, 32'sb00000000000000000000000001000000 {0 0 0};
+    %pad/u 6;
+    %store/vec4 v0x148e50180_0, 0, 6;
+    %load/vec4 v0x148e50180_0;
+    %ix/load 4, 2, 0;
+    %flag_set/imm 4, 0;
+    %store/vec4a v0x148e32500, 4, 0;
+    %vpi_func 4 44 "$urandom_range" 32, 32'sb00000000000000000000000000000000, 32'sb00000000000000000000000001000000 {0 0 0};
+    %pad/u 6;
+    %store/vec4 v0x148e50270_0, 0, 6;
+    %load/vec4 v0x148e50270_0;
+    %ix/load 4, 3, 0;
+    %flag_set/imm 4, 0;
+    %store/vec4a v0x148e32500, 4, 0;
+    %vpi_func 4 45 "$urandom_range" 32, 32'sb00000000000000000000000000000000, 32'sb00000000000000000000000001000000 {0 0 0};
+    %pad/u 6;
+    %store/vec4 v0x148e50320_0, 0, 6;
+    %load/vec4 v0x148e50320_0;
+    %ix/load 4, 4, 0;
+    %flag_set/imm 4, 0;
+    %store/vec4a v0x148e32500, 4, 0;
+    %end;
+S_0x148e40ef0 .scope task, "pass_ans" "pass_ans" 4 79, 4 79 0, S_0x148e1dec0;
+ .timescale -9 -12;
+TD_TESTBED.I_PATTERN.pass_ans ;
+    %load/vec4 v0x148e50640_0;
+    %pushi/vec4 3, 0, 32;
+    %div/s;
+    %pushi/vec4 7, 0, 32;
+    %mod/s;
+    %cmpi/e 0, 0, 32;
+    %jmp/0xz  T_4.2, 4;
+    %vpi_call/w 4 80 "$display", "\033[0;31mPASS PATTERN NO.%4d, \033[m", v0x148e50640_0 {0 0 0};
+    %jmp T_4.3;
+T_4.2 ;
+    %load/vec4 v0x148e50640_0;
+    %pushi/vec4 3, 0, 32;
+    %div/s;
+    %pushi/vec4 7, 0, 32;
+    %mod/s;
+    %cmpi/e 1, 0, 32;
+    %jmp/0xz  T_4.4, 4;
+    %vpi_call/w 4 81 "$display", "\033[1;31mPASS PATTERN NO.%4d, \033[m", v0x148e50640_0 {0 0 0};
+    %jmp T_4.5;
+T_4.4 ;
+    %load/vec4 v0x148e50640_0;
+    %pushi/vec4 3, 0, 32;
+    %div/s;
+    %pushi/vec4 7, 0, 32;
+    %mod/s;
+    %cmpi/e 2, 0, 32;
+    %jmp/0xz  T_4.6, 4;
+    %vpi_call/w 4 82 "$display", "\033[1;33mPASS PATTERN NO.%4d, \033[m", v0x148e50640_0 {0 0 0};
+    %jmp T_4.7;
+T_4.6 ;
+    %load/vec4 v0x148e50640_0;
+    %pushi/vec4 3, 0, 32;
+    %div/s;
+    %pushi/vec4 7, 0, 32;
+    %mod/s;
+    %cmpi/e 3, 0, 32;
+    %jmp/0xz  T_4.8, 4;
+    %vpi_call/w 4 83 "$display", "\033[0;32mPASS PATTERN NO.%4d, \033[m", v0x148e50640_0 {0 0 0};
+    %jmp T_4.9;
+T_4.8 ;
+    %load/vec4 v0x148e50640_0;
+    %pushi/vec4 3, 0, 32;
+    %div/s;
+    %pushi/vec4 7, 0, 32;
+    %mod/s;
+    %cmpi/e 4, 0, 32;
+    %jmp/0xz  T_4.10, 4;
+    %vpi_call/w 4 84 "$display", "\033[0;36mPASS PATTERN NO.%4d, \033[m", v0x148e50640_0 {0 0 0};
+    %jmp T_4.11;
+T_4.10 ;
+    %load/vec4 v0x148e50640_0;
+    %pushi/vec4 3, 0, 32;
+    %div/s;
+    %pushi/vec4 7, 0, 32;
+    %mod/s;
+    %cmpi/e 5, 0, 32;
+    %jmp/0xz  T_4.12, 4;
+    %vpi_call/w 4 85 "$display", "\033[0;34mPASS PATTERN NO.%4d, \033[m", v0x148e50640_0 {0 0 0};
+    %jmp T_4.13;
+T_4.12 ;
+    %load/vec4 v0x148e50640_0;
+    %pushi/vec4 3, 0, 32;
+    %div/s;
+    %pushi/vec4 7, 0, 32;
+    %mod/s;
+    %cmpi/e 6, 0, 32;
+    %jmp/0xz  T_4.14, 4;
+    %vpi_call/w 4 86 "$display", "\033[0;35mPASS PATTERN NO.%4d, \033[m", v0x148e50640_0 {0 0 0};
+T_4.14 ;
+T_4.13 ;
+T_4.11 ;
+T_4.9 ;
+T_4.7 ;
+T_4.5 ;
+T_4.3 ;
+    %end;
+S_0x148e41060 .scope task, "sort_task" "sort_task" 4 49, 4 49 0, S_0x148e1dec0;
+ .timescale -9 -12;
+TD_TESTBED.I_PATTERN.sort_task ;
+    %pushi/vec4 0, 0, 32;
+    %store/vec4 v0x148e32590_0, 0, 32;
+T_5.16 ;
+    %load/vec4 v0x148e32590_0;
+    %cmpi/s 4, 0, 32;
+    %jmp/0xz T_5.17, 5;
+    %pushi/vec4 0, 0, 32;
+    %store/vec4 v0x148e503d0_0, 0, 32;
+T_5.18 ;
+    %load/vec4 v0x148e503d0_0;
+    %cmpi/s 4, 0, 32;
+    %jmp/0xz T_5.19, 5;
+    %ix/getv/s 4, v0x148e503d0_0;
+    %load/vec4a v0x148e32500, 4;
+    %load/vec4 v0x148e503d0_0;
+    %addi 1, 0, 32;
+    %ix/vec4/s 4;
+    %load/vec4a v0x148e32500, 4;
+    %cmp/u;
+    %flag_mov 8, 5;
+    %jmp/0 T_5.20, 8;
+    %ix/getv/s 4, v0x148e503d0_0;
+    %load/vec4a v0x148e32500, 4;
+    %load/vec4 v0x148e503d0_0;
+    %addi 1, 0, 32;
+    %ix/vec4/s 4;
+    %load/vec4a v0x148e32500, 4;
+    %concat/vec4; draw_concat_vec4
+    %jmp/1 T_5.21, 8;
+T_5.20 ; End of true expr.
+    %load/vec4 v0x148e503d0_0;
+    %addi 1, 0, 32;
+    %ix/vec4/s 4;
+    %load/vec4a v0x148e32500, 4;
+    %ix/getv/s 4, v0x148e503d0_0;
+    %load/vec4a v0x148e32500, 4;
+    %concat/vec4; draw_concat_vec4
+    %jmp/0 T_5.21, 8;
+ ; End of false expr.
+    %blend;
+T_5.21;
+    %split/vec4 6;
+    %load/vec4 v0x148e503d0_0;
+    %addi 1, 0, 32;
+    %ix/vec4/s 4;
+    %store/vec4a v0x148e32500, 4, 0;
+    %ix/getv/s 4, v0x148e503d0_0;
+    %store/vec4a v0x148e32500, 4, 0;
+    ; show_stmt_assign_vector: Get l-value for compressed += operand
+    %load/vec4 v0x148e503d0_0;
+    %pushi/vec4 1, 0, 32;
+    %add;
+    %store/vec4 v0x148e503d0_0, 0, 32;
+    %jmp T_5.18;
+T_5.19 ;
+    ; show_stmt_assign_vector: Get l-value for compressed += operand
+    %load/vec4 v0x148e32590_0;
+    %pushi/vec4 1, 0, 32;
+    %add;
+    %store/vec4 v0x148e32590_0, 0, 32;
+    %jmp T_5.16;
+T_5.17 ;
+    %ix/load 4, 2, 0;
+    %flag_set/imm 4, 0;
+    %load/vec4a v0x148e32500, 4;
+    %store/vec4 v0x148e50480_0, 0, 6;
+    %delay 1000, 0;
+    %end;
+S_0x148e50780 .scope module, "I_Sort" "Sort" 3 17, 5 1 0, S_0x148e23dd0;
+ .timescale -9 -12;
+    .port_info 0 /INPUT 6 "in_num0";
+    .port_info 1 /INPUT 6 "in_num1";
+    .port_info 2 /INPUT 6 "in_num2";
+    .port_info 3 /INPUT 6 "in_num3";
+    .port_info 4 /INPUT 6 "in_num4";
+    .port_info 5 /OUTPUT 6 "out_num";
+v0x148e509d0_0 .net *"_ivl_14", 0 0, L_0x148e53880;  1 drivers
+v0x148e50a60_0 .net *"_ivl_16", 11 0, L_0x148e53970;  1 drivers
+v0x148e50af0_0 .net *"_ivl_18", 11 0, L_0x148e53b30;  1 drivers
+v0x148e50bb0_0 .net *"_ivl_20", 11 0, L_0x148e53c30;  1 drivers
+v0x148e50c60_0 .net *"_ivl_25", 0 0, L_0x148e53e80;  1 drivers
+v0x148e50d40_0 .net *"_ivl_27", 11 0, L_0x148e54020;  1 drivers
+v0x148e50df0_0 .net *"_ivl_29", 11 0, L_0x148e540c0;  1 drivers
+v0x148e50ea0_0 .net *"_ivl_3", 0 0, L_0x148e53260;  1 drivers
+v0x148e50f40_0 .net *"_ivl_31", 11 0, L_0x148e542f0;  1 drivers
+v0x148e51050_0 .net *"_ivl_36", 0 0, L_0x148e54570;  1 drivers
+v0x148e510f0_0 .net *"_ivl_38", 11 0, L_0x148e54430;  1 drivers
+v0x148e511a0_0 .net *"_ivl_40", 11 0, L_0x148e54740;  1 drivers
+v0x148e51250_0 .net *"_ivl_42", 11 0, L_0x148e54920;  1 drivers
+v0x148e51300_0 .net *"_ivl_47", 0 0, L_0x148e54860;  1 drivers
+v0x148e513a0_0 .net *"_ivl_49", 11 0, L_0x148e54cf0;  1 drivers
+v0x148e51450_0 .net *"_ivl_5", 11 0, L_0x148e53320;  1 drivers
+v0x148e51500_0 .net *"_ivl_51", 11 0, L_0x148e54a60;  1 drivers
+v0x148e51690_0 .net *"_ivl_53", 11 0, L_0x148e54f80;  1 drivers
+v0x148e51720_0 .net *"_ivl_58", 0 0, L_0x148e54ed0;  1 drivers
+v0x148e517c0_0 .net *"_ivl_60", 11 0, L_0x148e55020;  1 drivers
+v0x148e51870_0 .net *"_ivl_62", 11 0, L_0x148e55350;  1 drivers
+v0x148e51920_0 .net *"_ivl_64", 11 0, L_0x148e55240;  1 drivers
+v0x148e519d0_0 .net *"_ivl_66", 0 0, L_0x148e55610;  1 drivers
+v0x148e51a70_0 .net *"_ivl_7", 11 0, L_0x148e53500;  1 drivers
+v0x148e51b20_0 .net *"_ivl_70", 0 0, L_0x148e55820;  1 drivers
+v0x148e51bc0_0 .net *"_ivl_74", 0 0, L_0x148e55a40;  1 drivers
+v0x148e51c60_0 .net *"_ivl_9", 11 0, L_0x148e535a0;  1 drivers
+v0x148e51d10_0 .net "in_num0", 5 0, v0x148e50010_0;  alias, 1 drivers
+v0x148e51dd0_0 .net "in_num1", 5 0, v0x148e500d0_0;  alias, 1 drivers
+v0x148e51e60_0 .net "in_num2", 5 0, v0x148e50180_0;  alias, 1 drivers
+v0x148e51ef0_0 .net "in_num3", 5 0, v0x148e50270_0;  alias, 1 drivers
+v0x148e51f80_0 .net "in_num4", 5 0, v0x148e50320_0;  alias, 1 drivers
+v0x148e52010_0 .net "out1_0", 5 0, L_0x148e53180;  1 drivers
+v0x148e515a0_0 .net "out1_1", 5 0, L_0x148e530e0;  1 drivers
+v0x148e522a0_0 .net "out1_2", 5 0, L_0x148e537a0;  1 drivers
+v0x148e52330_0 .net "out1_3", 5 0, L_0x148e53700;  1 drivers
+v0x148e523c0_0 .net "out2_1", 5 0, L_0x148e53de0;  1 drivers
+v0x148e52470_0 .net "out2_2", 5 0, L_0x148e53cd0;  1 drivers
+v0x148e52520_0 .net "out2_3", 5 0, L_0x148e544d0;  1 drivers
+v0x148e525d0_0 .net "out2_4", 5 0, L_0x148e54390;  1 drivers
+v0x148e52680_0 .net "out3_0", 5 0, L_0x148e54b30;  1 drivers
+v0x148e52730_0 .net "out3_1", 5 0, L_0x148e549c0;  1 drivers
+v0x148e527e0_0 .net "out3_2", 5 0, L_0x148e55120;  1 drivers
+v0x148e52890_0 .net "out3_3", 5 0, L_0x148e54c50;  1 drivers
+v0x148e52940_0 .net "out4_2", 5 0, L_0x148e554f0;  1 drivers
+v0x148e529f0_0 .net "out4_3", 5 0, L_0x148e556f0;  1 drivers
+v0x148e52aa0_0 .net "out_num", 5 0, L_0x148e55900;  alias, 1 drivers
+L_0x148e530e0 .part L_0x148e535a0, 6, 6;
+L_0x148e53180 .part L_0x148e535a0, 0, 6;
+L_0x148e53260 .cmp/gt 6, v0x148e500d0_0, v0x148e50010_0;
+L_0x148e53320 .concat [ 6 6 0 0], v0x148e50010_0, v0x148e500d0_0;
+L_0x148e53500 .concat [ 6 6 0 0], v0x148e500d0_0, v0x148e50010_0;
+L_0x148e535a0 .functor MUXZ 12, L_0x148e53500, L_0x148e53320, L_0x148e53260, C4<>;
+L_0x148e53700 .part L_0x148e53c30, 6, 6;
+L_0x148e537a0 .part L_0x148e53c30, 0, 6;
+L_0x148e53880 .cmp/gt 6, v0x148e50270_0, v0x148e50180_0;
+L_0x148e53970 .concat [ 6 6 0 0], v0x148e50180_0, v0x148e50270_0;
+L_0x148e53b30 .concat [ 6 6 0 0], v0x148e50270_0, v0x148e50180_0;
+L_0x148e53c30 .functor MUXZ 12, L_0x148e53b30, L_0x148e53970, L_0x148e53880, C4<>;
+L_0x148e53cd0 .part L_0x148e542f0, 6, 6;
+L_0x148e53de0 .part L_0x148e542f0, 0, 6;
+L_0x148e53e80 .cmp/gt 6, L_0x148e537a0, L_0x148e530e0;
+L_0x148e54020 .concat [ 6 6 0 0], L_0x148e530e0, L_0x148e537a0;
+L_0x148e540c0 .concat [ 6 6 0 0], L_0x148e537a0, L_0x148e530e0;
+L_0x148e542f0 .functor MUXZ 12, L_0x148e540c0, L_0x148e54020, L_0x148e53e80, C4<>;
+L_0x148e54390 .part L_0x148e54920, 6, 6;
+L_0x148e544d0 .part L_0x148e54920, 0, 6;
+L_0x148e54570 .cmp/gt 6, v0x148e50320_0, L_0x148e53700;
+L_0x148e54430 .concat [ 6 6 0 0], L_0x148e53700, v0x148e50320_0;
+L_0x148e54740 .concat [ 6 6 0 0], v0x148e50320_0, L_0x148e53700;
+L_0x148e54920 .functor MUXZ 12, L_0x148e54740, L_0x148e54430, L_0x148e54570, C4<>;
+L_0x148e549c0 .part L_0x148e54f80, 6, 6;
+L_0x148e54b30 .part L_0x148e54f80, 0, 6;
+L_0x148e54860 .cmp/gt 6, L_0x148e53de0, L_0x148e53180;
+L_0x148e54cf0 .concat [ 6 6 0 0], L_0x148e53180, L_0x148e53de0;
+L_0x148e54a60 .concat [ 6 6 0 0], L_0x148e53de0, L_0x148e53180;
+L_0x148e54f80 .functor MUXZ 12, L_0x148e54a60, L_0x148e54cf0, L_0x148e54860, C4<>;
+L_0x148e54c50 .part L_0x148e55240, 6, 6;
+L_0x148e55120 .part L_0x148e55240, 0, 6;
+L_0x148e54ed0 .cmp/gt 6, L_0x148e544d0, L_0x148e53cd0;
+L_0x148e55020 .concat [ 6 6 0 0], L_0x148e53cd0, L_0x148e544d0;
+L_0x148e55350 .concat [ 6 6 0 0], L_0x148e544d0, L_0x148e53cd0;
+L_0x148e55240 .functor MUXZ 12, L_0x148e55350, L_0x148e55020, L_0x148e54ed0, C4<>;
+L_0x148e55610 .cmp/gt 6, L_0x148e549c0, L_0x148e55120;
+L_0x148e554f0 .functor MUXZ 6, L_0x148e55120, L_0x148e549c0, L_0x148e55610, C4<>;
+L_0x148e55820 .cmp/ge 6, L_0x148e54390, L_0x148e54c50;
+L_0x148e556f0 .functor MUXZ 6, L_0x148e54390, L_0x148e54c50, L_0x148e55820, C4<>;
+L_0x148e55a40 .cmp/ge 6, L_0x148e556f0, L_0x148e554f0;
+L_0x148e55900 .functor MUXZ 6, L_0x148e556f0, L_0x148e554f0, L_0x148e55a40, C4<>;
+    .scope S_0x148e1dec0;
+T_6 ;
+    %pushi/vec4 0, 0, 32;
+    %store/vec4 v0x148e50640_0, 0, 32;
+T_6.0 ;
+    %load/vec4 v0x148e50640_0;
+    %cmpi/s 1000, 0, 32;
+    %jmp/0xz T_6.1, 5;
+    %fork TD_TESTBED.I_PATTERN.input_task, S_0x148e40d80;
+    %join;
+    %fork TD_TESTBED.I_PATTERN.sort_task, S_0x148e41060;
+    %join;
+    %fork TD_TESTBED.I_PATTERN.check_ans, S_0x148e07df0;
+    %join;
+    %fork TD_TESTBED.I_PATTERN.pass_ans, S_0x148e40ef0;
+    %join;
+    ; show_stmt_assign_vector: Get l-value for compressed += operand
+    %load/vec4 v0x148e50640_0;
+    %pushi/vec4 1, 0, 32;
+    %add;
+    %store/vec4 v0x148e50640_0, 0, 32;
+    %jmp T_6.0;
+T_6.1 ;
+    %fork TD_TESTBED.I_PATTERN.YOU_PASS_task, S_0x148e1e030;
+    %join;
+    %vpi_call/w 4 35 "$finish" {0 0 0};
+    %end;
+    .thread T_6;
+    .scope S_0x148e23dd0;
+T_7 ;
+    %vpi_call/w 3 8 "$dumpfile", "../02_REPORT/WAVEFORM.vcd" {0 0 0};
+    %vpi_call/w 3 9 "$dumpvars", 32'sb00000000000000000000000000000000, S_0x148e23dd0 {0 0 0};
+    %end;
+    .thread T_7;
+# The file index is used to find the file name in the following table.
+:file_names 6;
+    "N/A";
+    "<interactive>";
+    "-";
+    "../00_TESTBED/TESTBED.sv";
+    "./../00_TESTBED/PATTERN.sv";
+    "./../01_RTL/Sort.sv";

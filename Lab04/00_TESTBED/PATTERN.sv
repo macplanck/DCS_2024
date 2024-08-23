@@ -1,4 +1,5 @@
 `define CYCLE_TIME 10.0
+`define PATNUM   20000
 
 module PATTERN(
   // Input signals
@@ -23,7 +24,6 @@ input logic [3:0] out_diff ;
 //================================================================
 // parameters & integer
 //================================================================
-integer PATNUM = 20000;
 integer input_file,output_file;
 integer i, j, k;
 
@@ -66,7 +66,7 @@ initial begin
 	
 	reset_task ;
     @(negedge clk) ;
-	for (patcount = 0; patcount < PATNUM; patcount = patcount + 1) begin
+	for (patcount = 0; patcount < `PATNUM; patcount = patcount + 1) begin
 		pat_delay = $urandom_range(1,2) ;
 		repeat(pat_delay) @(negedge clk) ;
 		input_task ;
@@ -173,14 +173,6 @@ task check_ans ; begin
 end endtask
 
 task pass_ans; begin
-	// if      (patcount % 7 == 0)  $display("\033[0;31mPASS PATTERN NO.%4d, \033[m\n",patcount) ;
-	// else if (patcount % 7 == 1)  $display("\033[1;31mPASS PATTERN NO.%4d, \033[m\n",patcount) ;
-	// else if (patcount % 7 == 2)  $display("\033[1;33mPASS PATTERN NO.%4d, \033[m\n",patcount) ;
-	// else if (patcount % 7 == 3)  $display("\033[0;32mPASS PATTERN NO.%4d, \033[m\n",patcount) ;
-	// else if (patcount % 7 == 4)  $display("\033[0;36mPASS PATTERN NO.%4d, \033[m\n",patcount) ;
-	// else if (patcount % 7 == 5)  $display("\033[0;34mPASS PATTERN NO.%4d, \033[m\n",patcount) ;
-	// else if (patcount % 7 == 6)  $display("\033[0;35mPASS PATTERN NO.%4d, \033[m\n",patcount) ;
-
 	if      ((patcount / 3) % 7 == 0)  $display("\033[0;31mPASS PATTERN NO.%4d, \033[m",patcount) ;
 	else if ((patcount / 3) % 7 == 1)  $display("\033[1;31mPASS PATTERN NO.%4d, \033[m",patcount) ;
 	else if ((patcount / 3) % 7 == 2)  $display("\033[1;33mPASS PATTERN NO.%4d, \033[m",patcount) ;
@@ -188,8 +180,6 @@ task pass_ans; begin
 	else if ((patcount / 3) % 7 == 4)  $display("\033[0;36mPASS PATTERN NO.%4d, \033[m",patcount) ;
 	else if ((patcount / 3) % 7 == 5)  $display("\033[0;34mPASS PATTERN NO.%4d, \033[m",patcount) ;
 	else if ((patcount / 3) % 7 == 6)  $display("\033[0;35mPASS PATTERN NO.%4d, \033[m",patcount) ;
-
-
 end endtask
 
 task YOU_PASS_task;begin

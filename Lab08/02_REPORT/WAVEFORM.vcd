@@ -1,5 +1,5 @@
 $date
-	Fri Jul  5 22:17:56 2024
+	Fri Aug 23 15:01:20 2024
 $end
 $version
 	Icarus Verilog
@@ -48,6 +48,8 @@ $upscope $end
 $scope task fail $end
 $upscope $end
 $scope task input_task $end
+$upscope $end
+$scope task pass_ans $end
 $upscope $end
 $scope task reset_task $end
 $upscope $end
@@ -188844,6 +188846,7 @@ b1 I
 0F
 1*
 #20026000
+b1001110001001 9
 b1001110001001 :
 b11100001000 ,
 0*
@@ -188862,6 +188865,7 @@ b1011010 +
 b1011010 S
 1*
 #20030000
+b1001110001010 9
 b1001110001010 :
 b1011010 ,
 0*
@@ -188874,6 +188878,7 @@ bx M
 0H
 1*
 #20034000
+b1001110001011 9
 b1001110001011 :
 b1000001000 ,
 0*
@@ -188884,6 +188889,7 @@ b0xxxxxxxxxxxxxxxxxxxxxxxx S
 0#
 1*
 #20038000
+b1001110001100 9
 b1001110001100 :
 b101 8
 0*

@@ -1,0 +1,205 @@
+$date
+	Fri Aug 23 14:56:35 2024
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module TESTBED $end
+$var wire 1 ! rst_n $end
+$var wire 1 " out_valid $end
+$var wire 5 # out_data [4:0] $end
+$var wire 1 $ in_valid $end
+$var wire 8 % in_data [7:0] $end
+$var wire 1 & clk_2 $end
+$var wire 1 ' clk_1 $end
+$scope module I_CDC $end
+$var wire 1 ( dbusy $end
+$var wire 1 ) sidle $end
+$var wire 1 $ in_valid $end
+$var wire 8 * in_data [7:0] $end
+$var wire 1 + dvalid $end
+$var wire 8 , dout [7:0] $end
+$var wire 1 & clk_2 $end
+$var wire 1 ' clk_1 $end
+$var parameter 32 - S_out $end
+$var parameter 32 . S_send_data $end
+$var parameter 32 / S_wait_input $end
+$var parameter 32 0 S_wait_sync_high $end
+$var parameter 32 1 S_wait_sync_idle $end
+$var parameter 32 2 S_wait_sync_low $end
+$var reg 8 3 data [7:0] $end
+$var reg 8 4 data_comb [7:0] $end
+$var reg 2 5 next_1 [1:0] $end
+$var reg 2 6 next_2 [1:0] $end
+$var reg 5 7 out_data [4:0] $end
+$var reg 5 8 out_data_comb [4:0] $end
+$var reg 1 " out_valid $end
+$var reg 1 9 out_valid_comb $end
+$var reg 1 : rst_n $end
+$var reg 1 ; sready $end
+$var reg 1 < sready_comb $end
+$var reg 2 = state_1 [1:0] $end
+$var reg 2 > state_2 [1:0] $end
+$scope module sync $end
+$var wire 1 ( dbusy $end
+$var wire 8 ? din [7:0] $end
+$var wire 1 ! rst_n $end
+$var wire 1 ; sready $end
+$var wire 1 ) sidle $end
+$var wire 1 ' sclk $end
+$var wire 1 @ sack $end
+$var wire 1 A dreq $end
+$var wire 1 & dclk $end
+$var parameter 32 B WIDTH $end
+$var reg 1 C dack $end
+$var reg 8 D dout [7:0] $end
+$var reg 1 + dvalid $end
+$var reg 1 E sreq $end
+$var reg 8 F trans_data [7:0] $end
+$scope module N0 $end
+$var wire 1 E D $end
+$var wire 1 A Q $end
+$var wire 1 ! rst_n $end
+$var wire 1 & clk $end
+$var reg 1 G A1 $end
+$var reg 1 H A2 $end
+$upscope $end
+$scope module N1 $end
+$var wire 1 C D $end
+$var wire 1 @ Q $end
+$var wire 1 ! rst_n $end
+$var wire 1 ' clk $end
+$var reg 1 I A1 $end
+$var reg 1 @ A2 $end
+$upscope $end
+$upscope $end
+$scope begin Domain_1_FSM_comb $end
+$upscope $end
+$scope begin Domain_1_FSM_ff $end
+$upscope $end
+$scope begin Domain_1_comb $end
+$upscope $end
+$scope begin Domain_1_ff $end
+$upscope $end
+$scope begin Domain_2_FSM_comb $end
+$upscope $end
+$scope begin Domain_2_FSM_ff $end
+$upscope $end
+$scope begin Domain_2_comb_1 $end
+$upscope $end
+$scope begin Domain_2_ff_1 $end
+$upscope $end
+$upscope $end
+$scope module I_PATTERN $end
+$var wire 5 J out_data [4:0] $end
+$var wire 1 " out_valid $end
+$var parameter 32 K PATNUM $end
+$var reg 1 ' clk_1 $end
+$var reg 1 & clk_2 $end
+$var reg 8 L golden_in_data [7:0] $end
+$var reg 5 M golden_out_data [4:0] $end
+$var reg 8 N in_data [7:0] $end
+$var reg 1 $ in_valid $end
+$var reg 1 O rst_n $end
+$var real 1 P CYCLE_clk1 $end
+$var real 1 Q CYCLE_clk2 $end
+$var integer 32 R SEED [31:0] $end
+$var integer 32 S b [31:0] $end
+$var integer 32 T color [31:0] $end
+$var integer 32 U color_stage [31:0] $end
+$var integer 32 V g [31:0] $end
+$var integer 32 W lat [31:0] $end
+$var integer 32 X patcount [31:0] $end
+$var integer 32 Y r [31:0] $end
+$var integer 32 Z total_latency [31:0] $end
+$var integer 32 [ x [31:0] $end
+$scope task YOU_PASS_task $end
+$upscope $end
+$scope task check_ans $end
+$upscope $end
+$scope task fail $end
+$upscope $end
+$scope task input_task $end
+$upscope $end
+$scope task reset_signal_task $end
+$upscope $end
+$scope task wait_out_valid $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+b1111101000 K
+b1000 B
+b10 2
+b1 1
+b1 0
+b0 /
+b10 .
+b0 -
+$end
+#0
+$dumpvars
+bx [
+b0 Z
+b101 Y
+bx X
+bx W
+b0 V
+b0 U
+bx T
+b0 S
+b1100100 R
+r2.5 Q
+r14.1 P
+1O
+bx N
+bx M
+bx L
+bx J
+xI
+xH
+xG
+bx F
+xE
+bx D
+xC
+xA
+x@
+bx ?
+bx >
+bx =
+x<
+x;
+x:
+x9
+bx 8
+bx 7
+bx 6
+bx 5
+bx 4
+bx 3
+bx ,
+x+
+bx *
+x)
+0(
+0'
+0&
+bx %
+0$
+bx #
+x"
+x!
+$end
+#500
+0O
+#1250
+0&
+#7050
+0'
+#40500

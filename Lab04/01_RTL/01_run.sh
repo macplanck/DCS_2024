@@ -1,8 +1,8 @@
 # Initialize commands and log file location
 log_file="./../02_REPORT/syn.log"
 
-cmd_1="iverilog -g 2012 -o ../02_REPORT/RESULT.vvp ../00_TESTBED/TESTBED.sv"
-cmd_2="vvp ../02_REPORT/RESULT.vvp"
+cmd_1="iverilog -g 2012 -o ../02_REPORT/run.vvp ../00_TESTBED/TESTBED.sv"
+cmd_2="vvp ../02_REPORT/run.vvp"
 
 
 : > $log_file                       # initialize syn.log 
