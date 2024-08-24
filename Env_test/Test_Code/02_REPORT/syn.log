@@ -1,4 +1,4 @@
-./../01_RTL/test.sv:10: warning: always_comb process has no sensitivities.
+./../01_RTL/test.sv:28: warning: always_comb process has no sensitivities.
 VCD info: dumpfile ../02_REPORT/WAVEFORM.vcd opened for output.
 [0;31mPASS PATTERN NO.   0, [m
 [0;31mPASS PATTERN NO.   1, [m

@@ -1,11 +1,29 @@
-module test(in, clk, out, out_valid);
+module test(
+    in, 
+    clk, 
+    out, 
+    out_valid
+);
+
+//---------------------------------------------------------------------
+//   INPUT AND OUTPUT DECLARATION                         
+//---------------------------------------------------------------------
 
 input [3:0] in;
-input       clk;
+input      clk;
+
 output logic [3:0] out;
-output logic       out_valid;
+output logic out_valid;
+
+//---------------------------------------------------------------------
+//   LOGIC DECLARATION
+//---------------------------------------------------------------------
 
 logic out_valid_comb;
+
+//---------------------------------------------------------------------
+//   Your DESIGN                        
+//---------------------------------------------------------------------
 
 always_comb begin
     out_valid_comb = 1;  
