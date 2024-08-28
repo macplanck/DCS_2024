@@ -15,8 +15,13 @@
 > * **請各位低調的傳承和使用，請勿丟到公開平台**
 > * **在旁觀看大神如果我有東西寫錯或是可以補充的歡迎提出～**
 
-<p class="callout info">A success message</p>
 
+
+```callout {type: 'info', title: 'Alternative method'}
+You could also do things like such-and such... blah blah
+
+And `markdown` should work *here* too
+```
 
 
 </br>
