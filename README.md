@@ -11,17 +11,9 @@
 雖然不如燈塔來的明亮，但有望能在起步中引領各位，讓各位能夠順利啟航，至少能在各位進入深淵之前，還能感受verilog片刻的美好。
 
 
-> [!CAUTION]
 > * **請各位低調的傳承和使用，請勿丟到公開平台**
 > * **在旁觀看大神如果我有東西寫錯或是可以補充的歡迎提出～**
 
-
-
-```callout {type: 'info', title: 'Alternative method'}
-You could also do things like such-and such... blah blah
-
-And `markdown` should work *here* too
-```
 
 
 </br>
@@ -32,8 +24,7 @@ And `markdown` should work *here* too
 #### 編譯器使用
 使用免費版的```iverilog```，雖然處理能力有限，但可供一定程度練習使用，下載請自行查閱網站
 
-> [!WARNING]
-> **註：** 除了Lab以外，其餘的iverilog無法執行處理 (只有Lab能跑模擬)
+> [!WARNING] **註：** 除了Lab以外，其餘的iverilog無法執行處理 (只有Lab能跑模擬)
 
 
 #### 波形模擬軟體
