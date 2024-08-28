@@ -87,6 +87,7 @@
 ## 參、實戰練習方法
 
 * **Step 1:** 把紅色框框的部分改成自己的code
+
 ![Alt text](PPTs/other/coding_image.png)
 
 
@@ -106,6 +107,7 @@
 ```
 
 * **Step 4:** 結果顯示
+
 ![Alt text](PPTs/other/pass-fail_image.png)
 
 
