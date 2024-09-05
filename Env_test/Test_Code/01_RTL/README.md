@@ -3,11 +3,11 @@
 * #### Windows
 
 ```shell!
-    allen@Allens-Mac DCS_2024 % .\01_run.bat
+    allen@Allens-Mac 01_RTL % .\01_run.bat
 ```
 
 * #### Mac/Linux
 
 ```shell!
-    allen@Allens-Mac DCS_2024 % ./01_run.sh
+    allen@Allens-Mac 01_RTL % ./01_run.sh
 ```
