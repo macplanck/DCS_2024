@@ -12,8 +12,10 @@
     allen@Allens-Mac 01_RTL % ./01_run.sh
 ```
 
+</br>
 
-## Note
+
+## Frequently Asked Question of Shell Script
 * In Mac/Linux, you should type command below to enable your shell script at first time
 ```shell!
     allen@Allens-Mac 01_RTL % chmod +x 01_run.sh
