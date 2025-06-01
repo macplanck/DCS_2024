@@ -1,0 +1,283 @@
+irun(64): 15.20-s084: (c) Copyright 1995-2020 Cadence Design Systems, Inc.
+TOOL:	irun(64)	15.20-s084: Started on Jun 14, 2024 at 21:30:48 CST
+irun
+	-timescale 1ns/1fs
+	-override_precision
+	-sdf_precision 1fs
+	TESTBED.sv
+	-define GATE
+	-debug
+	-v /usr/cad/umc018/Verilog/umc18_neg.v
+	-nontcglitch
+	-loadpli1 debpli:novas_pli_boot
+Loading snapshot worklib.TESTBED:sv .................... Done
+SVSEED default: 1
+ncsim: *W,DSEM2009: This SystemVerilog design is simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
+*Verdi* Loading libsscore_ius152.so
+ncsim> source /usr/cad/cadence/INCISIV/INCISIVE_15.20.084/tools/inca/files/ncsimrc
+ncsim> run
+FSDB Dumper for IUS, Release Verdi_P-2019.06, Linux x86_64/64bit, 05/26/2019
+(C) 1996 - 2019 by Synopsys, Inc.
+*Verdi* FSDB WARNING: The FSDB file already exists. Overwriting the FSDB file may crash the programs that are using this file.
+*Verdi* : Create FSDB file 'LP_SYN.fsdb'
+*Verdi* : Begin traversing the scopes, layer (0).
+*Verdi* : Enable +mda dumping.
+*Verdi* : End of traversing.
+PASS PATTERN NO.  0
+PASS PATTERN NO.  1
+PASS PATTERN NO.  2
+PASS PATTERN NO.  3
+PASS PATTERN NO.  4
+PASS PATTERN NO.  5
+PASS PATTERN NO.  6
+PASS PATTERN NO.  7
+PASS PATTERN NO.  8
+PASS PATTERN NO.  9
+PASS PATTERN NO. 10
+PASS PATTERN NO. 11
+PASS PATTERN NO. 12
+PASS PATTERN NO. 13
+PASS PATTERN NO. 14
+PASS PATTERN NO. 15
+PASS PATTERN NO. 16
+PASS PATTERN NO. 17
+PASS PATTERN NO. 18
+PASS PATTERN NO. 19
+PASS PATTERN NO. 20
+PASS PATTERN NO. 21
+PASS PATTERN NO. 22
+PASS PATTERN NO. 23
+PASS PATTERN NO. 24
+PASS PATTERN NO. 25
+PASS PATTERN NO. 26
+PASS PATTERN NO. 27
+PASS PATTERN NO. 28
+PASS PATTERN NO. 29
+PASS PATTERN NO. 30
+PASS PATTERN NO. 31
+PASS PATTERN NO. 32
+PASS PATTERN NO. 33
+PASS PATTERN NO. 34
+PASS PATTERN NO. 35
+PASS PATTERN NO. 36
+PASS PATTERN NO. 37
+PASS PATTERN NO. 38
+PASS PATTERN NO. 39
+PASS PATTERN NO. 40
+PASS PATTERN NO. 41
+PASS PATTERN NO. 42
+PASS PATTERN NO. 43
+PASS PATTERN NO. 44
+PASS PATTERN NO. 45
+PASS PATTERN NO. 46
+PASS PATTERN NO. 47
+PASS PATTERN NO. 48
+PASS PATTERN NO. 49
+PASS PATTERN NO. 50
+PASS PATTERN NO. 51
+PASS PATTERN NO. 52
+PASS PATTERN NO. 53
+PASS PATTERN NO. 54
+PASS PATTERN NO. 55
+PASS PATTERN NO. 56
+PASS PATTERN NO. 57
+PASS PATTERN NO. 58
+PASS PATTERN NO. 59
+PASS PATTERN NO. 60
+PASS PATTERN NO. 61
+PASS PATTERN NO. 62
+PASS PATTERN NO. 63
+PASS PATTERN NO. 64
+PASS PATTERN NO. 65
+PASS PATTERN NO. 66
+PASS PATTERN NO. 67
+PASS PATTERN NO. 68
+PASS PATTERN NO. 69
+PASS PATTERN NO. 70
+PASS PATTERN NO. 71
+PASS PATTERN NO. 72
+PASS PATTERN NO. 73
+PASS PATTERN NO. 74
+PASS PATTERN NO. 75
+PASS PATTERN NO. 76
+PASS PATTERN NO. 77
+PASS PATTERN NO. 78
+PASS PATTERN NO. 79
+PASS PATTERN NO. 80
+PASS PATTERN NO. 81
+PASS PATTERN NO. 82
+PASS PATTERN NO. 83
+PASS PATTERN NO. 84
+PASS PATTERN NO. 85
+PASS PATTERN NO. 86
+PASS PATTERN NO. 87
+PASS PATTERN NO. 88
+PASS PATTERN NO. 89
+PASS PATTERN NO. 90
+PASS PATTERN NO. 91
+PASS PATTERN NO. 92
+PASS PATTERN NO. 93
+PASS PATTERN NO. 94
+PASS PATTERN NO. 95
+PASS PATTERN NO. 96
+PASS PATTERN NO. 97
+PASS PATTERN NO. 98
+PASS PATTERN NO. 99
+PASS PATTERN NO.100
+PASS PATTERN NO.101
+PASS PATTERN NO.102
+PASS PATTERN NO.103
+PASS PATTERN NO.104
+PASS PATTERN NO.105
+PASS PATTERN NO.106
+PASS PATTERN NO.107
+PASS PATTERN NO.108
+PASS PATTERN NO.109
+PASS PATTERN NO.110
+PASS PATTERN NO.111
+PASS PATTERN NO.112
+PASS PATTERN NO.113
+PASS PATTERN NO.114
+PASS PATTERN NO.115
+PASS PATTERN NO.116
+PASS PATTERN NO.117
+PASS PATTERN NO.118
+PASS PATTERN NO.119
+PASS PATTERN NO.120
+PASS PATTERN NO.121
+PASS PATTERN NO.122
+PASS PATTERN NO.123
+PASS PATTERN NO.124
+PASS PATTERN NO.125
+PASS PATTERN NO.126
+PASS PATTERN NO.127
+PASS PATTERN NO.128
+PASS PATTERN NO.129
+PASS PATTERN NO.130
+PASS PATTERN NO.131
+PASS PATTERN NO.132
+PASS PATTERN NO.133
+PASS PATTERN NO.134
+PASS PATTERN NO.135
+PASS PATTERN NO.136
+PASS PATTERN NO.137
+PASS PATTERN NO.138
+PASS PATTERN NO.139
+PASS PATTERN NO.140
+PASS PATTERN NO.141
+PASS PATTERN NO.142
+PASS PATTERN NO.143
+PASS PATTERN NO.144
+PASS PATTERN NO.145
+PASS PATTERN NO.146
+PASS PATTERN NO.147
+PASS PATTERN NO.148
+PASS PATTERN NO.149
+PASS PATTERN NO.150
+PASS PATTERN NO.151
+PASS PATTERN NO.152
+PASS PATTERN NO.153
+PASS PATTERN NO.154
+PASS PATTERN NO.155
+PASS PATTERN NO.156
+PASS PATTERN NO.157
+PASS PATTERN NO.158
+PASS PATTERN NO.159
+PASS PATTERN NO.160
+PASS PATTERN NO.161
+PASS PATTERN NO.162
+PASS PATTERN NO.163
+PASS PATTERN NO.164
+PASS PATTERN NO.165
+PASS PATTERN NO.166
+PASS PATTERN NO.167
+PASS PATTERN NO.168
+PASS PATTERN NO.169
+PASS PATTERN NO.170
+PASS PATTERN NO.171
+PASS PATTERN NO.172
+PASS PATTERN NO.173
+PASS PATTERN NO.174
+PASS PATTERN NO.175
+PASS PATTERN NO.176
+PASS PATTERN NO.177
+PASS PATTERN NO.178
+PASS PATTERN NO.179
+PASS PATTERN NO.180
+PASS PATTERN NO.181
+PASS PATTERN NO.182
+PASS PATTERN NO.183
+PASS PATTERN NO.184
+PASS PATTERN NO.185
+PASS PATTERN NO.186
+PASS PATTERN NO.187
+PASS PATTERN NO.188
+PASS PATTERN NO.189
+PASS PATTERN NO.190
+PASS PATTERN NO.191
+PASS PATTERN NO.192
+PASS PATTERN NO.193
+PASS PATTERN NO.194
+PASS PATTERN NO.195
+PASS PATTERN NO.196
+PASS PATTERN NO.197
+PASS PATTERN NO.198
+PASS PATTERN NO.199
+[37m                                                                                                                                          
+[37m                                                                                [32m      :BBQvi.                                              
+[37m                                                              .i7ssrvs7         [32m     BBBBBBBBQi                                           
+[37m                        .:r7rrrr:::.        .::::::...   .i7vr:.      .B:       [32m    :BBBP :7BBBB.                                         
+[37m                      .Kv.........:rrvYr7v7rr:.....:rrirJr.   .rgBBBBg  Bi      [32m    BBBB     BBBB                                         
+[37m                     7Q  :rubEPUri:.       ..:irrii:..    :bBBBBBBBBBBB  B      [32m   iBBBv     BBBB       vBr                               
+[37m                    7B  BBBBBBBBBBBBBBB::BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB :R     [32m   BBBBBKrirBBBB.     :BBBBBB:                            
+[37m                   Jd .BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB: Bi    [32m  rBBBBBBBBBBBR.    .BBBM:BBB                             
+[37m                  uZ .BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB .B    [32m  BBBB   .::.      EBBBi :BBU                             
+[37m                 7B .BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB  B    [32m MBBBr           vBBBu   BBB.                             
+[37m                .B  BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB: JJ   [32m i7PB          iBBBBB.  iBBB                              
+[37m                B. BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB  Lu             [32m  vBBBBPBBBBPBBB7       .7QBB5i                
+[37m               Y1 KBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBi XBBBBBBBi :B            [32m :RBBB.  .rBBBBB.      rBBBBBBBB7              
+[37m              :B .BBBBBBBBBBBBBsRBBBBBBBBBBBrQBBBBB. UBBBRrBBBBBBr 1BBBBBBBBB  B.          [32m    .       BBBB       BBBB  :BBBB             
+[37m              Bi BBBBBBBBBBBBBi :BBBBBBBBBBE .BBK.  .  .   QBBBBBBBBBBBBBBBBBB  Bi         [32m           rBBBr       BBBB    BBBU            
+[37m             .B .BBBBBBBBBBBBBBQBBBBBBBBBBBB       [38;2;242;172;172mBBv [37m.LBBBBBBBBBBBBBBBBBBBBBB. B7.:ii:   [32m           vBBB        .BBBB   :7i.            
+[37m            .B  PBBBBBBBBBBBBBBBBBBBBBBBBBBBBbYQB. [38;2;242;172;172mBB: [37mBBBBBBBBBBBBBBBBBBBBBBBBB  Jr:::rK7 [32m             .7  BBB7   iBBBg                  
+[37m           7M  PBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB  [38;2;242;172;172mBB. [37mBBBBBBBBBBBBBBBBBBBBBBB..i   .   v1                  [32mdBBB.   5BBBr                 
+[37m          sZ .BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB  [38;2;242;172;172mBB. [37mBBBBBBBBBBBBBBBBBBBBBBBBBBB iD2BBQL.                 [32m ZBBBr  EBBBv     YBBBBQi     
+[37m  .7YYUSIX5 .BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB  [38;2;242;172;172mBB. [37mBBBBBBBBBBBBBBBBBBBBBBBBY.:.      :B                 [32m  iBBBBBBBBD     BBBBBBBBB.   
+[37m LB.        ..BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB. [38;2;242;172;172mBB: [37mBBBBBBBBBBBBBBBBBBBBBBBBMBBB. BP17si                 [32m    :LBBBr      vBBBi  5BBB   
+[37m  KvJPBBB :BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB: [38;2;242;172;172mZB: [37mBBBBBBBBBBBBBBBBBBBBBBBBBsiJr .i7ssr:                [32m          ...   :BBB:   BBBu  
+[37m i7ii:.   ::BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBj [38;2;242;172;172muBi [37mQBBBBBBBBBBBBBBBBBBBBBBBBi.ir      iB                [32m         .BBBi   BBBB   iMBu  
+[37mDB    .  vBdBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBg [38;2;242;172;172m7Bi [37mBBBBBBBBBBBBBBBBBBBBBBBBBBBBB rBrXPv.                [32m          BBBX   :BBBr        
+[37m :vQBBB. BQBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBQ [38;2;242;172;172miB: [37mBBBBBBBBBBBBBBBBBBBBBBBBBBBBB .L:ii::irrrrrrrr7jIr   [32m          .BBBv  :BBBQ        
+[37m :7:.   .. 5BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB  [38;2;242;172;172mBr [37mBBBBBBBBBBBBBBBBBBBBBBBBBBBB:            ..... ..YB. [32m           .BBBBBBBBB:        
+[37mBU  .:. BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB  [38;2;242;172;172mB7 [37mgBBBBBBBBBBBBBBBBBBBBBBBBBB. gBBBBBBBBBBBBBBBBBB. BL [32m             rBBBBB1.         
+[37m rY7iB: BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB: [38;2;242;172;172mB7 [37mBBBBBBBBBBBBBBBBBBBBBBBBBB. QBBBBBBBBBBBBBBBBBi  v5                                
+[37m     us EBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB [38;2;242;172;172mIr [37mBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBgu7i.:BBBBBBBr Bu                                 
+[37m      B  7BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB.[38;2;242;172;172m:i [37mBBBBBBBBBBBBBBBBBBBBBBBBBBBv:.  .. :::  .rr    rB                                  
+[37m      us  .BBBBBBBBBBBBBQLXBBBBBBBBBBBBBBBBBBBBBBBBq  .BBBBBBBBBBBBBBBBBBBBBBBBBv  :iJ7vri:::1Jr..isJYr                                   
+[37m      B  BBBBBBB  MBBBM      qBBBBBBBBBBBBBBBBBBBBBB: BBBBBBBBBBBBBBBBBBBBBBBBBB  B:           iir:                                       
+[37m     iB iBBBBBBBL       BBBP. :BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB  B.                                                       
+[37m     P: BBBBBBBBBBB5v7gBBBBBB  BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB: Br                                                        
+[37m     B  BBBs 7BBBBBBBBBBBBBB7 :BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB .B                                                         
+[37m    .B :BBBB.  EBBBBBQBBBBBJ .BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB. B.                                                         
+[37m    ij qBBBBBg          ..  .BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB .B                                                          
+[37m    UY QBBBBBBBBSUSPDQL...iBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBK EL                                                          
+[37m    B7 BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB: B:                                                          
+[37m    B  BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBYrBB vBBBBBBBBBBBBBBBBBBBBBBBB. Ls                                                          
+[37m    B  BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBi_  /UBBBBBBBBBBBBBBBBBBBBBBBBB. :B:                                                        
+[37m   rM .BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB  ..IBBBBBBBBBBBBBBBBQBBBBBBBBBB  B                                                        
+[37m   B  BBBBBBBBBdZBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBPBBBBBBBBBBBBEji:..     sBBBBBBBr Br                                                       
+[37m  7B 7BBBBBBBr     .:vXQBBBBBBBBBBBBBBBBBBBBBBBBBQqui::..  ...i:i7777vi  BBBBBBr Bi                                                       
+[37m  Ki BBBBBBB  rY7vr:i....  .............:.....  ...:rii7vrr7r:..      7B  BBBBB  Bi                                                       
+[37m  B. BBBBBB  B:    .::ir77rrYLvvriiiiiiirvvY7rr77ri:..                 bU  iQBB:..rI                                                      
+[37m.S: 7BBBBP  B.                                                          vI7.  .:.  B.                                                     
+[37mB: ir:.   :B.                                                             :rvsUjUgU.                                                      
+[37mrMvrrirJKur                                                                                                                               [m
+----------------------------------------------------------------------------------------------------------------------
+                                                  Congratulations!                						             
+                                           You have passed all patterns!          						             
+                                           Total latency:       16326 cycles                						             
+----------------------------------------------------------------------------------------------------------------------
+Simulation complete via $finish(1) at time 181795 NS + 0
+./PATTERN.sv:257 $finish;	
+ncsim> exit
+TOOL:	irun(64)	15.20-s084: Exiting on Jun 14, 2024 at 21:30:53 CST  (total: 00:00:05)

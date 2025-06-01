@@ -1,0 +1,9 @@
+//
+// File created by:  irun
+// Do not modify this file
+
+s1::(05Jun2024:13:18:11):( irun -timescale 1ns/1fs -override_precision -sdf_precision 1fs TESTBED.sv -define GATE -debug -v /usr/cad/umc018/Verilog/umc18_neg.v -nontcglitch -loadpli1 debpli:novas_pli_boot )
+s2::(05Jun2024:13:19:54):( irun -timescale 1ns/1fs -override_precision -sdf_precision 1fs TESTBED.sv -define GATE -debug -v /usr/cad/umc018/Verilog/umc18_neg.v -nontcglitch -loadpli1 debpli:novas_pli_boot )
+s3::(06Jun2024:13:58:18):( irun -timescale 1ns/1fs -override_precision -sdf_precision 1fs TESTBED.sv -define GATE -debug -v /usr/cad/umc018/Verilog/umc18_neg.v -nontcglitch -loadpli1 debpli:novas_pli_boot )
+s4::(08Jun2024:23:10:58):( irun -timescale 1ns/1fs -override_precision -sdf_precision 1fs TESTBED.sv -define GATE -debug -v /usr/cad/umc018/Verilog/umc18_neg.v -nontcglitch -loadpli1 debpli:novas_pli_boot )
+s5::(14Jun2024:21:30:48):( irun -timescale 1ns/1fs -override_precision -sdf_precision 1fs TESTBED.sv -define GATE -debug -v /usr/cad/umc018/Verilog/umc18_neg.v -nontcglitch -loadpli1 debpli:novas_pli_boot )

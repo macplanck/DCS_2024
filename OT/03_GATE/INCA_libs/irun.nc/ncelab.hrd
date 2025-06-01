@@ -1,0 +1,13 @@
+//
+// File created by:  irun
+// Do not modify this file
+//
+-timescale
+1ns/1fs
+-OVERRIDE_PRECISION
+-SDF_PRECISION
+1fs
+-ACCESS
++rw
+-LOADPLI1
+debpli:novas_pli_boot
